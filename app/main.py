@@ -36,7 +36,8 @@ def root():
 # ===============================
 # LOAD PCOS MODELS
 # ===============================
-rf_model = pickle.load(open("backend/pcos_backend/models/rf_model.pkl", "rb"))
+rf_model = pickle.load(open("pcos_backend/models/rf_model.pkl", "rb"))
+
 xgb_model = pickle.load(open("pcos_backend/models/xgb_model.pkl", "rb"))
 knn_model = pickle.load(open("pcos_backend/models/knn_model.pkl", "rb"))
 pcos_scaler = pickle.load(open("pcos_backend/models/scaler.pkl", "rb"))
